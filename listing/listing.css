@@ -1,0 +1,123 @@
+body{
+    margin: auto;
+}
+a{
+    text-decoration: none
+}
+/* Header Start */
+header{
+    height:60px;
+    background-color:#e09c83
+}
+
+#icon{
+    float:left
+}
+
+#social{
+    float:right
+}
+
+.slogo{
+    height: 50px;
+    width: 50px;
+}
+
+#heading{
+    text-align: center;
+    color: #192f60;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#heading1{
+    margin-left: 10px;
+    margin-top: -5;
+    margin-bottom: 10px;
+    color: #192f60;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: #192f60;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3{
+    margin-top: 28px;
+    color: #192f60;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+select{
+    height:25px;
+    width:100%;
+    font-size:15px;
+    text-align:center;
+}
+
+.mainContent{
+    height:700px;
+    width:75%;
+    margin-left:13%
+}
+
+#filter{
+    height:500px;
+    width:22%;
+    float: left;
+}
+
+#card{
+    height:700px;
+    width:75%;
+    margin-left:2%;
+    float: left;
+    overflow: scroll;
+}
+
+#content{
+    height:220px;
+    width: 100%;
+}
+
+.imgDiv{
+    height:200px;
+    width:40%;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+    border:2px groove gray
+}
+
+.imgDiv > img {
+    height:200px;
+    width:100%; 
+}
+
+.imgDiv > a > img {
+    height:200px;
+    width:100%; 
+}
+
+.contentDiv{
+    height:200px;
+    width:50%;
+    margin-left:2%;
+    float: left;
+    margin-top: -2%;
+}
+
+/* footer Start */
+footer{
+    height:200px;
+    background-color:#e09c83
+}
+
+.foot1{
+    width:35%;
+    height:120px;
+    float: left;
+    border-right:2px solid white
+}
