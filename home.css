@@ -2,6 +2,11 @@ body{
     margin: auto;
 }
 
+.mydark{
+    background-color: black;
+    color: white;
+}
+
 header{
     height:60px;
     background-color:#e09c83
@@ -12,9 +17,21 @@ header{
     font-weight: 1000;
 }
 
+#toggle{
+    margin-top: 8%;
+}
+
 .item > img{
     height: 400px !important;
     width:100%
+}
+
+#dd1{
+    border-radius: 30px;
+}
+
+#dd2{
+    border-radius: 30px;
 }
 
 #search{
@@ -53,17 +70,17 @@ header{
 }
 
 #heading{
-    margin-left:11%;
+    margin-left:10%;
     margin-top:13%;
     position: absolute;
-    color: yellow;
+    color: white;
     font-size:45px;
 }
 
 .dropdown{
     height:60px;
     width:60%;
-    margin-left:22%;
+    margin-left:18%;
     margin-top: 18.5%;
     position: absolute;
 }

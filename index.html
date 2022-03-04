@@ -8,6 +8,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="home.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -31,6 +32,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
+                        <li><button id="toggle" class="btn btn-dark" onClick="changeMode()">Light/Dark</button></li>
                         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> SignUp</a></li>
                     </ul>
@@ -44,33 +46,21 @@
                 <span><img src="./image/delievery.png" id="delivery" /></span>
             </div>
             <div id="heading">
-                Find The Best Restaurants Near You
+                Discover Best Food & Drinks Near You
             </div>
             <div class="dropdown">
-                <div class="btn-group">
-                    <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        PLEASE SELECT CITY
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Bangalore</a></li>
-                        <li><a href="#">Mumbai</a></li>
-                        <li><a href="#">Delhi</a></li>
-                    </ul>
-                </div>
-                <div class="btn-group">
-                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        PLEASE SELECT RESTAURANTS
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Bangalore</a></li>
-                        <li><a href="#">Mumbai</a></li>
-                        <li><a href="#">Delhi</a></li>
-                    </ul>
-                </div>
+                <select id="dd1">
+                    <option>PLEASE SELECT CITY</option>
+                    <option>Delhi</option>
+                    <option>Mumbai</option>
+                    <option>Pune</option>
+                </select>
+                <select id="dd2">
+                    <option>PLEASE SELECT RESTAURANTS</option>
+                    <option>Kamat Dine In</option>
+                    <option>Al-Bek</option>
+                    <option>Mc Donalds</option>
+                </select>
             </div>
         </div>
 
