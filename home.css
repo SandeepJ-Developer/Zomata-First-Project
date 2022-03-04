@@ -26,14 +26,6 @@ header{
     width:100%
 }
 
-#dd1{
-    border-radius: 30px;
-}
-
-#dd2{
-    border-radius: 30px;
-}
-
 #search{
     height:400px;
     background-image: url('image/food-wallpaper.png');
@@ -83,6 +75,14 @@ header{
     margin-left:18%;
     margin-top: 18.5%;
     position: absolute;
+}
+
+#dd1{
+    border-radius: 30px;
+}
+
+#dd2{
+    border-radius: 30px;
 }
 
 select{
