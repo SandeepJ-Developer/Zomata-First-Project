@@ -11,3 +11,11 @@ function changeMode(){
     let toggleMode = document.getElementById('toggle');
     toggleMode.classList.toggle('mydark');
 }
+
+function loadCoupon(){
+    document.getElementById('coupon').style.visibility = 'visible';
+}
+
+function closeCoupon(){
+    document.getElementById('coupon').style.visibility = 'hidden';
+}

@@ -3,41 +3,41 @@
 <head>
     <title>Zomato - Food Delivery</title>
     <link href="./image/delievery.png" rel="icon" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="home.css" rel="stylesheet" type="text/css" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="home.css" rel="stylesheet" type="text/css" />
     <script src="home.js"></script>
 </head>
 
 <body>
-    <div class="Container">
+    <div class="container-fluid">
         <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        ZOMATO
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNav">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><button id="toggle" class="btn btn-dark" onClick="changeMode()">Light/Dark</button></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> SignUp</a></li>
-                    </ul>
-                </div>
-
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    ZOMATO
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><button id="toggle" class="btn btn-dark" onClick="changeMode()">Light/Dark</button></li>
+                    <li><a href="#"><span><img src="image/cart.png" width="25px" height="25px"/></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> SignUp</a></li>
+                </ul>
             </div>
         </nav>
 
@@ -64,6 +64,13 @@
             </div>
         </div>
 
+        <div id="coupon">
+            <button style="float:left" onClick="closeCoupon()">&times;</button>
+        </div>
+        <script>
+            window.onload=loadCoupon()
+        </script>
+
         <div id="QuickSearch">
             <span id="QuickHeading">
                 Quick Search
@@ -72,10 +79,10 @@
                 Discover Restaurants By Meal
             </span>
             <div class="row">
-                <div id="first" class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                <div id="first" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="tileContainer">
                         <div class="tileComponent1">
-                            <img src="image/dinner.png" alt="snacks" height="160px" width="250px" />
+                            <img src="image/dinner.png" alt="snacks" height="180px" width="250px" />
                         </div>
                         <div class="tileComponent2">
                             <div class="componentHeading">
@@ -87,10 +94,10 @@
                         </div>
                     </div>
                 </div>
-                <div id="second" class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                <div id="second" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="tileContainer">
                         <div class="tileComponent1">
-                            <img src="image/food-tile.png" alt="snacks" height="160px" width="250px" />
+                            <img src="image/food-tile.png" alt="snacks" height="180px" width="250px" />
                         </div>
                         <div class="tileComponent2">
                             <div class="componentHeading">
@@ -102,10 +109,10 @@
                         </div>
                     </div>
                 </div>
-                <div id="third" class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                <div id="third" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="tileContainer">
                         <div class="tileComponent1">
-                            <img src="image/lunch.png" alt="lunch" height="160px" width="250px" />
+                            <img src="image/lunch.png" alt="lunch" height="180px" width="250px" />
                         </div>
                         <div class="tileComponent2">
                             <div class="componentHeading">
@@ -117,10 +124,10 @@
                         </div>
                     </div>
                 </div>
-                <div id="fourth" class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                <div id="fourth" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="tileContainer">
                         <div class="tileComponent1">
-                            <img src="image/food3.jpg" alt="dinner" height="160px" width="250px" />
+                            <img src="image/food3.jpg" alt="dinner" height="180px" width="250px" />
                         </div>
                         <div class="tileComponent2">
                             <div class="componentHeading">
@@ -132,14 +139,44 @@
                         </div>
                     </div>
                 </div>
-                <div id="fifth" class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                <div id="fifth" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="tileContainer">
                         <div class="tileComponent1">
-                            <img src="image/delivery1.png" alt="delievery" height="160px" width="250px" />
+                            <img src="image/zpro.jpg" alt="delievery" height="180px" width="250px" />
                         </div>
                         <div class="tileComponent2">
                             <div class="componentHeading">
-                                <a href="../listing/listing.html">Free Delivery</a>
+                                <a href="../listing/listing.html">Zomato Pro</a>
+                            </div>
+                            <div class="componentSubHeading">
+                                Exclusive offers with pro membership
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sixth" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="image/food6.jpg" alt="snacks" height="180px" width="250px" />
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                <a href="../listing/listing.html">Hungers</a>
+                            </div>
+                            <div class="componentSubHeading">
+                                Enjoy Unlimited Buffet
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sixth" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="tileContainer">
+                        <div class="tileComponent1">
+                            <img src="image/delivery1.png" alt="snacks" height="180px" width="250px" />
+                        </div>
+                        <div class="tileComponent2">
+                            <div class="componentHeading">
+                                <a href="../listing/listing.html">Free Delievery</a>
                             </div>
                             <div class="componentSubHeading">
                                 Enjoy Free Delievery Service
@@ -147,10 +184,10 @@
                         </div>
                     </div>
                 </div>
-                <div id="sixth" class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                <div id="sixth" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="tileContainer">
                         <div class="tileComponent1">
-                            <img src="image/nightlife.png" alt="snacks" height="160px" width="250px" />
+                            <img src="image/nightlife.png" alt="snacks" height="180px" width="250px" />
                         </div>
                         <div class="tileComponent2">
                             <div class="componentHeading">
@@ -165,6 +202,14 @@
             </div>
         </div>
 
+        <div id="Offers">
+            <span id="OffersHeading">
+                Food Collections
+            </span>
+            <span id="OffersSubHeading">
+                Tasty and Delicious
+            </span>
+        </div>
         <div id="myslider" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#myslider" data-slide-to="0" class="active"></li>
