@@ -32,6 +32,13 @@
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+                <ul class="nav navbar-nav">
+                    <img id="weatherimg" src="image/weatherinfo.jpg" alt="weathericon"/>
+                    <span id="weatherinfo"> </span>
+                    <span id="cityinfo"> </span>
+                </ul>
+                <script src="geolocation.js"></script>
+                <script>window.onload=geolocation()</script>
                 <ul class="nav navbar-nav navbar-right">
                     <li><button id="toggle" class="btn btn-dark" onClick="changeMode()">Light/Dark</button></li>
                     <li><a href="#"><span><img src="image/cart.png" width="25px" height="25px"/></span></a></li>
